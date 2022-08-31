@@ -54,8 +54,21 @@ public class SCRUM {
         
         switch (opcion){
             
-        case 1:  
-                break;
+////////////////////CASO 1 by Gerardo/////////////////////
+        case 1:
+        	double temporal = 0.0;
+        	int x=0,y=0;
+        	for(int i=0; i<n; i++){     
+        		for (int j=1;j<6; j++){
+        			if(temporal < calif[i][j]){
+        				temporal = calif[i][j];
+        				x = i;
+        				y = j;
+       }
+    }
+}
+        	System.out.println("El alumno con la calificación más alta de todos los grupos es el " + (x+1) +" con calificacion de " + calif[x][y]);
+        		break;
         
         case 2:
                 break;
@@ -104,43 +117,12 @@ public class SCRUM {
                 break;
         ////////////////////CASO 6/////////////////////    
         case 6:
-                 //for(int i = 0; i < vectCalCal.length; i++) {
-        	System.out.print("Nota del alumno 1: ");
-        nota = sn.nextDouble();
-       
-        suma = suma + nota;
-       
-        mayor = nota; //la tomamos como nota mayor y menor
-        menor = nota;
-       
-        for (int i = 2; i <= n; i++) {  // leemos el resto de notas desde el alumno 2 hasta el alumno n         
-            System.out.print("Nota del alumno " + i + ": ");
-            nota = sn.nextDouble();}
-            //suma = suma + nota; }
-                if(nota <=65){
-        		 Reprobados++;
-        	 }
-         System.out.println("Personas reprobadas: " + Reprobados);
+
                 break;
-                
+               
             case 7:
-                System.out.print("Nota del alumno 1: ");
-        nota = sn.nextDouble();
-       
-        suma = suma + nota;
-       
-        mayor = nota; //la tomamos como nota mayor y menor
-        menor = nota;
-       
-        for (int i = 2; i <= n; i++) {  // leemos el resto de notas desde el alumno 2 hasta el alumno n         
-            System.out.print("Nota del alumno " + i + ": ");
-            nota = sn.nextDouble();}
-                if(nota >= 95) {
-        		 Sobresalientes ++;
-        	 }
-                 System.out.println("Personas Sobresalientes: " + Sobresalientes);
-                break;
-           
+           break;
+
             case 8:
                  
        
