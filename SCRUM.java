@@ -91,13 +91,13 @@ public class SCRUM {
                 double promedio2;
                
         	promedio2 = suma / 5;
-        	System.out.println("el promedio del alumno " + (i+1) + " es:" + promedio2);
+        	System.out.println("El promedio del grupo: " + (i+1) + " es:" + promedio2);
         	suma = 0;
                 
         	promedioGrupal = promedioGrupal + promedio2;
     	}
         promedioGrupal = promedioGrupal / 5;
-    	System.out.println("Promedio grupal: "+ promedioGrupal);
+    	//System.out.println("Promedio grupal: "+ promedioGrupal);
                 break;
         ////////////////////CASO 5/////////////////////   
         case 5:
